@@ -3,17 +3,16 @@ name: Build and Deploy Code
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
-jobs: 
-  job1: 
+jobs:
+  job1:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: pulling git repo
         uses: actions/checkout@v2
       - name: say hi to sandy
         run: echo "Hi sandy"
-
